@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Happy Birthday
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="content">
+            <div class="circle-container">
+                <div class="circle">
+                    <img src="/static/images/1.png" class="image">
+                </div>
+            </div>
+
+            <div class="popup-trigger">
+                <button class="center-button">👉Нажми на меня👈</button>
+            </div>
+        </div>
+        <canvas width="968" height="480" id="fireworks-canvas" class="fireworks"></canvas>
+    </div>
+
+{% endblock %}
