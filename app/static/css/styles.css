@@ -12,12 +12,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     z-index: 1000;
-    width: 300px;
-    max-height: 200px;
+    width: 90%;
+    max-width: 300px;
     overflow-y: auto;
 }
 
@@ -36,21 +36,17 @@ body {
 }
 
 .circle-container {
-    margin-left: 1450px;
-    margin-top: 150px;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .circle {
+    margin-top: 200px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 55%;
+    left: 93%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     background-color: #808080;
@@ -66,18 +62,16 @@ body {
 }
 
 .center-button {
-    margin-right: 50px;
     display: inline-flex;
-    padding: 15px 30px;
+    padding: 10px 20px;
     background-color: #87CEEB;
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    width: auto;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Центрируем кнопку сверху */
+    margin-top: auto;
 }
 
 .center-button:hover {
@@ -87,13 +81,6 @@ body {
 .fireworks {
     background: transparent;
 }
-
-.blurred-background {
-    transition: backdrop-filter 0.5s ease;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.95);
-}
-
 
 .blurred-background {
     transition: backdrop-filter 0.5s ease;
