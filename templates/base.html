@@ -11,8 +11,10 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
 <body class="body">
-    {% block body %}
-        body
-    {% endblock %}
+    <div class="container">
+        {% block body %}
+            body
+        {% endblock %}
+    </div>
 </body>
 </html>

@@ -1,38 +1,53 @@
+body {
+    background-image: url('/static/images/2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
 .container {
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.center-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #87CEEB;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 250px;
-    margin-top: 250px;
-    margin-left: 550px;
-    transition: background-color 0.3s ease;
-}
-
-.center-button:hover {
-    background-color: #4682B4;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .circle-container {
+    margin-left: 1450px;
+    margin-top: 150px;
     position: relative;
-    width: 100px;
-    height: 100px;
-    left: 1000px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
 }
 
 .circle {
     position: absolute;
-    top: 230px;
-    left: 200px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
     height: 450px;
@@ -50,12 +65,27 @@
     transform-origin: center;
 }
 
-body {
-    background-image: url('/static/images/2.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.center-button {
+    margin-right: 50px;
+    display: inline-flex;
+    padding: 15px 30px;
+    background-color: #87CEEB;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Центрируем кнопку сверху */
+}
+
+.center-button:hover {
+    background-color: #4682B4;
+}
+
+.fireworks {
+    background: transparent;
 }
 
 .blurred-background {
@@ -65,22 +95,8 @@ body {
 }
 
 
-
-.fireworks {
-    background: transparent;
-}
-
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.blurred-background {
+    transition: backdrop-filter 0.5s ease;
+    backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-    width: 300px;
-    max-height: 200px;
-    overflow-y: auto;
 }
