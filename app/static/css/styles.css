@@ -11,7 +11,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(135, 206, 235, 0.5);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -19,6 +19,10 @@ body {
     width: 90%;
     max-width: 300px;
     overflow-y: auto;
+}
+
+.popup:hover {
+    background-color: rgba(135, 206, 235, 0.7);
 }
 
 .container {

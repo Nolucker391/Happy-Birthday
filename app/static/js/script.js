@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.remove();
         };
 
-        const content = document.createTextNode('Это небольшое окно с текстом.');
+        const content = document.createTextNode(
+        'Поздравляю тебя с Днем Рождения! \n  Желаю тебе: Солнца над головой каждый день, лежачего в душе тепла, и улыбки на лице всегда, когда ты смотришь на мир вокруг себя.♡ \n'
+        );
         const textContainer = document.createElement('div');
         textContainer.style.padding = '20px';
         textContainer.appendChild(content);
